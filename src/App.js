@@ -1,14 +1,17 @@
-import Logo from './images/logo.png'
+import logo from './images/logo.png';
+import platforms from './images/platforms.png';
+import chart from './images/chart.png';
+import galaxy from './images/galaxy.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="">
+    <div>
       <header>
         <nav className="navbar navbar-expand-lg">
           <div className="container">
-            <a className="navbar-brand" href="#">
-              <img scr={Logo} alt="logo"/>
+            <a className="navbar-brand" href="">
+              <img src={logo} className="img-fluid" alt="logo" />
             </a>
             <button
               aria-controls="navbarSupportedContent"
@@ -24,27 +27,27 @@ function App() {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="#infos-stats">
                     Infos &amp; Stats
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="#your-benefits">
                     Your benefits
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="#wallet-explorer">
                     Wallet Explorer
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="#tokenomics">
                     Tokenomics
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="#roadmap">
                     Roadmap
                   </a>
                 </li>
@@ -54,7 +57,7 @@ function App() {
         </nav>
 
 
-        <div className="container">
+        <div className="container info">
           <h1>Kai Inu</h1>
           <ul className="list">
             <li>Listed on 5 exchanges</li>
@@ -66,20 +69,25 @@ function App() {
           </ul>
         </div>
 
+        <div className="platforms">
+        <img src={platforms} className="img-fluid center" alt="platforms" />
+        </div>
       </header>
 
 
       <div className="container">
 
-        <section id="wallet-explorer">
+        <section id="wallet-explorer" className="wallet-explorer">
           <div className="row">
             <div className="col-md-6">
-
+              <img src={chart} className="img-fluid" alt="chart" />
             </div>
-            <div className="col-md-6">
-              <h1>Wallet Explorer</h1>
-              <p>At the top of the secret mountain, where the line between land and sky blurs, the veneered Kai Inu was forged by ancient monks. Declared as a natural monument in 1934, it’s time to declare Kai Inu as a crypto meme monument.</p>
-              <a href="" className="btn">Explore the Wallet Explorer now</a>
+            <div className="col-md-6 d-flex">
+              <div className="mt-auto mb-auto">
+                <h1>Wallet Explorer</h1>
+                <p>At the top of the secret mountain, where the line between land and sky blurs, the veneered Kai Inu was forged by ancient monks. Declared as a natural monument in 1934, it’s time to declare Kai Inu as a crypto meme monument.</p>
+                <a href="" className="btn">Explore the Wallet Explorer now</a>  
+              </div>
             </div>
           </div>
         </section>
@@ -142,11 +150,11 @@ function App() {
             
 
 
-        <section>
+        <section id="your-benefits">
           <div className="row">
             <h1>Why you should buy kai Inu</h1>
             <div className="col-md-6">
-
+              <iframe width="90%" height="100%" src="https://www.youtube.com/embed/FJYgse_La6M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div className="col-md-6">
               <ul className="list">
@@ -166,7 +174,7 @@ function App() {
         </section>
 
 
-        <section>
+        <section id="tokenomics">
           <div className="row">
             <div className="col-md-6">
               <div className="box">
@@ -197,41 +205,59 @@ function App() {
           <div className="row">
             <div className="col-md-6">
               <h1>Roadmap</h1>
+              <div className="relative">
+                <div class="vl"></div>
+                <ul className="roadmap-list">
+                  <li>
+                    <ul className="list">
+                      <h3>May 2021</h3>
+                      <li>Pre-sale</li>
+                      <li>Launch</li>
+                      <li>Audit</li>
+                      <li>CoinGecko Listing</li>
+                      <li>First Influencer Marketing</li>
+                      <li>Community Building</li>
+                    </ul>
+                  </li>
 
+                  <li>
+                    <ul className="list">
+                      <h3>June 2021</h3>
+                      <li>CoinMarketCap Listing</li>
+                      <li>2 Exchange listings</li>
+                      <li className="unchecked">Blockfolio listing</li>
+                      <li className="unchecked">Bridge to ETH</li>
+                      <li className="unchecked">Charity Partners</li>
+                      <li className="unchecked">Marketing Push</li>
+                    </ul>
+                  </li>
 
-              <div>
-                <ul className="list">
-                  <h3>May 2021</h3>
-                  <li>Pre-sale</li>
-                  <li>Launch</li>
-                  <li>Audit</li>
-                  <li>CoinGecko Listing</li>
-                  <li>First Influencer Marketing</li>
-                  <li>Community Building</li>
+                  <li>
+                    <ul className="list">
+                      <h3>July 2021</h3>
+                      <li className="unchecked">4 Exchange listings</li>
+                      <li className="unchecked">NFT Marketplace</li>
+                      <li className="unchecked">Kai Inu merchandise</li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <ul className="list">
+                      <h3>August 2021</h3>
+                      <p>To Be Announced…</p>
+                    </ul>
+                  </li>
+
                 </ul>
-
-                <ul className="list">
-                  <h3>June 2021</h3>
-                  <li>CoinMarketCap Listing</li>
-                  <li>2 Exchange listings</li>
-                  <li>Blockfolio listing</li>
-                  <li>Bridge to ETH</li>
-                  <li>Charity Partners</li>
-                  <li>Marketing Push</li>
-                </ul>
-
-                <ul className="list">
-                  <h3>July 2021</h3>
-                  <li>4 Exchange listings</li>
-                  <li>NFT Marketplace</li>
-                  <li>Kai Inu merchandise</li>
-                </ul>
+                
               </div>
               
 
             </div>
             <div className="col-md-6">
-              
+              <div className="galaxy">
+                <img src={galaxy} className="img-fluid" alt="galaxy" />
+              </div>
             </div>
           </div>
         </section>
