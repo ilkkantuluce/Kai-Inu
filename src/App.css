@@ -1,0 +1,109 @@
+body {
+  background-color: #121212;
+  color: #D5D5D5;
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  height: 100vh;
+  background-image: url("./images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar {
+  border-bottom: 1px #9D9D9D solid;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navbar a,
+.navbar a:focus {
+  color: #9D9D9D;
+}
+
+.navbar a:hover {
+  color: white;
+}
+
+section {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.list {
+  padding: 0px;
+}
+
+.list li {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  line-height: 30px;
+  list-style: none;
+  color: #D0D0D0;
+}
+
+.list li:before {
+  display: block;
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  vertical-align: middle;
+  background: url('./images/checked\ \(1\).svg') no-repeat left center;
+  background-size: contain;
+  content: '';
+}
+
+.list li.unchecked:before {
+  background: url('./images/checked\ \(1\).svg') no-repeat left center;
+}
+
+h1 {
+  font-weight: bold;
+  background: #FF8000;
+  background: -webkit-linear-gradient(to right, #FF8000 0%, #5A2D00 100%);
+  background: -moz-linear-gradient(to right, #FF8000 0%, #5A2D00 100%);
+  background: linear-gradient(to right, #FF8000 0%, #5A2D00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 65px;
+}
+
+.btn {
+  background-color: white;
+  color: black;
+  border-radius: 65px;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.box {
+  background-color: #252525;
+  border: 1.4px #333333 solid;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.box p {
+  color: #B2B1B1;
+}
+
+.box>div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box>div p {
+  margin-bottom: 0px;
+  color: white;
+}
+
+.box>div p.gray{
+  color: #B2B1B1;
+}
