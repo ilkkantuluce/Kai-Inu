@@ -51,13 +51,13 @@ section {
   height: 25px;
   margin-right: 10px;
   vertical-align: middle;
-  background: url('./images/checked\ \(1\).svg') no-repeat left center;
+  background: url('./images/checked.svg') no-repeat left center;
   background-size: contain;
   content: '';
 }
 
 .list li.unchecked:before {
-  background: url('./images/checked\ \(1\).svg') no-repeat left center;
+  background: url('./images/unchecked.svg') no-repeat left center;
 }
 
 h1 {
