@@ -1,7 +1,9 @@
 import logo from './images/logo.png';
 import logo2 from './images/logo2.png';
 import platforms from './images/platforms.png';
+import mobilePlatforms from './images/mobile-platforms.png';
 import chart from './images/chart.png';
+import mobileChart from './images/mobile-chart.png';
 import galaxy from './images/galaxy.svg';
 import './App.css';
 
@@ -61,7 +63,7 @@ function App() {
         <div className="container">
           <div className="info">
             <h1 data-aos="fade-down">Kai Inu</h1>
-            <ul className="list" data-aos="fade-right">
+            <ul className="list d-none d-lg-block" data-aos="fade-right">
               <li>Listed on 5 exchanges</li>
               <li>Unique Wallet Explorer Utility</li>
               <li>2% rewards for holders</li>
@@ -69,11 +71,25 @@ function App() {
               <li>Available on BSC & ETH chain</li>
               <li>Weekly buybacks</li>
             </ul>
+            <ul className="list d-lg-none" data-aos="fade-right">
+              <li>Listed on <b> 5 exchanges</b></li>
+              <li><b>Available on BSC & ETH chain</b></li>
+              <li>2% <b> rewards </b>for holders</li>
+              <li>German, <b> doxxed </b> team</li>
+              <li>Unique <b>Wallet Explorer</b> Utility</li>
+              <li><b>..and more!</b></li>
+            </ul>
+            <div className="btn-wrap">
+              <a href="" className="btn d-lg-none">Buy now</a>  
+              <a href="" className="btn outline d-lg-none">More features</a>  
+            </div>
+
             <img src={logo2} className="img-fluid" alt="logo2" />
           </div>
 
           <div className="platforms" data-aos="fade-up">
-            <img src={platforms} className="img-fluid center" alt="platforms" />
+            <img src={platforms} className="img-fluid d-none d-lg-block" alt="platforms" />
+            <img src={mobilePlatforms} className="img-fluid d-lg-none" alt="mobilePlatforms" />
           </div>
         </div>
         
@@ -82,7 +98,7 @@ function App() {
 
       <div className="container">
 
-        <section id="wallet-explorer" className="wallet-explorer">
+        <section id="wallet-explorer" className="wallet-explorer d-none d-lg-block">
           <div className="row">
             <div className="col-md-6" data-aos="fade-right">
               <img src={chart} className="img-fluid" alt="chart" />
@@ -154,7 +170,6 @@ function App() {
         </section>
             
 
-
         <section id="your-benefits">
           <div className="row">
             <h1 data-aos="fade-down">Why you should buy kai Inu</h1>
@@ -178,24 +193,41 @@ function App() {
           </div>
         </section>
 
+        
+
+        <section id="wallet-explorer" className="wallet-explorer d-lg-none">
+          <div className="row">
+            <div className="col-md-6 d-flex" data-aos="fade-right">
+              <div className="mt-auto mb-auto">
+                <h1>Wallet Explorer</h1>
+                <p>At the top of the secret mountain, where the line between land and sky blurs, the veneered Kai Inu was forged by ancient monks. Declared as a natural monument in 1934, it’s time to declare Kai Inu as a crypto meme monument.</p>
+              </div>
+            </div>
+            <div className="col-md-6" data-aos="fade-left">
+              <img src={mobileChart} className="img-fluid" alt="chart" />
+              <a href="" className="btn">Explore the Wallet Explorer now</a>  
+            </div>
+          </div>
+        </section>
+
 
         <section id="tokenomics">
           <div className="row">
-            <div className="col-md-6" data-aos="fade-right">
-              <div className="box">
+            <div className="col-md-6 order-2 order-md-1" data-aos="fade-right">
+              <div className="box blue">
                 <h2>3% Liquidity</h2>
                 <p>As more transactions come in, our liquidity will increase, allowing bigger trades and stabilizing our price.</p>
               </div>
-              <div className="box">
+              <div className="box purple">
                 <h2>2% Rewards</h2>
                 <p>As more transactions come in, our liquidity will increase, allowing bigger trades and stabilizing our price.</p>
               </div>
-              <div className="box">
+              <div className="box orange">
                 <h2>2% Marketing</h2>
                 <p>As more transactions come in, our liquidity will increase, allowing bigger trades and stabilizing our price.</p>
               </div>
             </div>
-            <div className="col-md-6 d-flex" data-aos="fade-left">
+            <div className="col-md-6 d-flex order-1 order-md-2" data-aos="fade-left">
               <div className="mt-auto mb-auto">
                 <h1>Tokenomics</h1>
                 <p>Kai Inu is a deflationary token running on the BSC network joining the ranks of the master pups.</p>
@@ -208,7 +240,7 @@ function App() {
 
         <section id="roadmap">
           <div className="row">
-            <div className="col-6">
+            <div className="col-md-6">
               <h1 data-aos="fade-down">Roadmap</h1>
               <div className="relative" data-aos="fade-right">
                 <div class="vl"></div>
@@ -259,7 +291,7 @@ function App() {
               
 
             </div>
-            <div className="col-6">
+            <div className="col-md-6 d-none d-lg-block">
               <div className="galaxy">
                 <img src={galaxy} className="img-fluid" alt="galaxy" />
               </div>

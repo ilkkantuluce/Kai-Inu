@@ -34,6 +34,10 @@ header .platforms {
   text-align: center;
 }
 
+header .platforms img {
+  margin: auto;
+}
+
 .navbar {
   border-bottom: 1px #9d9d9d17 solid;
   padding-top: 5px;
@@ -118,6 +122,11 @@ section {
   background: url('./images/checked-small.svg') no-repeat left center;
 }
 
+.list b {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
 ul li ul h3 {
   color: #FFFFFF;
 }
@@ -152,13 +161,28 @@ h1 {
   margin-bottom: 20px;
 }
 
-.btn {
+.btn,
+.btn:hover {
   background-color: white;
   color: black;
   border-radius: 65px;
   font-weight: bold;
   padding: 10px 25px;
   margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  border: 1px solid white;
+}
+
+.btn.outline {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.btn.outline:hover {
+  background-color: white;
+  color:black;
 }
 
 p {
@@ -170,27 +194,17 @@ p {
   box-shadow: none;
 }
 
+.btn-wrap {
+  text-align: center;
+}
+
+.btn-wrap .btn {
+  margin-bottom: 0px;
+}
+
 .wallet-explorer img{
   max-width: 90%;
   max-height: auto;
-}
-
-@media screen and (max-width: 1000px){
-  h1 {
-    font-size: 40px;
-    line-height: 50px;
-  }
-
-  .wallet-explorer img{
-    max-width: 100%;
-    max-height: auto;
-  }
-
-  section {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding-top: 50px;
-  }
 }
 
 .box {
@@ -227,4 +241,87 @@ p {
 
 .box>div p.gray{
   color: #B2B1B1;
+}
+
+
+@media screen and (max-width: 1000px){
+  body {
+    color: #B2B1B1;
+  }
+  header .info {
+    margin-top: 2vh;
+  }
+  header .platforms {
+    margin-top: 6vh;
+  }
+  header {
+    background-image: none;
+    border-bottom: 1px #9d9d9d17 solid;
+  }
+  header .info img {
+    display: none;
+  }
+  .list li {
+    color: #FFFFFF;
+  }
+  .roadmap-list li:before {
+    background: url('./images/mobile-dot.svg') no-repeat left center;
+  }
+  h1 {
+    font-size: 40px;
+    line-height: 50px;
+    background: #4943FF;
+    background: -webkit-linear-gradient(to right, #4943FF 0%, #925B99 50%, #FF8000 100%);
+    background: -moz-linear-gradient(to right, #4943FF 0%, #925B99 50%, #FF8000 100%);
+    background: linear-gradient(to right, #4943FF 0%, #925B99 50%, #FF8000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .wallet-explorer img{
+    max-width: 100%;
+    max-height: auto;
+  }
+  section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px #9d9d9d17 solid;
+  }
+  .box {
+    background-color: transparent;
+    border: transparent;
+    padding: 0px;
+  }
+  .box.blue {
+    border-left: 1px dashed #4943FF;
+    padding-left: 10px;
+    border-radius: 0px;
+    margin-top: 20px;
+  }
+  .box.blue h2 {
+    color: #4943FF;
+  }
+  .box.purple {
+    border-left: 1px dashed #925B99;
+    padding-left: 10px;
+    border-radius: 0px;
+    margin-top: 20px;
+  }
+  .box.purple h2 {
+    color: #925B99;
+  }
+  .box.orange {
+    border-left: 1px dashed #FF8000;
+    padding-left: 10px;
+    border-radius: 0px;
+    margin-top: 20px;
+  }
+  .box.orange h2 {
+    color: #FF8000;
+  }
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
 }
