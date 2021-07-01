@@ -178,6 +178,10 @@ p {
   margin-bottom: 20px;
 }
 
+#tokenomics .box {
+  width: fit-content;
+}
+
 .box p {
   color: #B2B1B1;
   max-width: 400px;
