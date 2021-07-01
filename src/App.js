@@ -4,6 +4,7 @@ import platforms from './images/platforms.png';
 import mobilePlatforms from './images/mobile-platforms.png';
 import chart from './images/chart.png';
 import mobileChart from './images/mobile-chart.png';
+import kaiken from './images/kaiken.png';
 import galaxy from './images/galaxy.svg';
 import './App.css';
 
@@ -80,8 +81,8 @@ function App() {
               <li><b>..and more!</b></li>
             </ul>
             <div className="btn-wrap">
-              <a href="" className="btn d-lg-none">Buy now</a>  
-              <a href="" className="btn outline d-lg-none">More features</a>  
+              <a href="" className="btn d-lg-none" data-aos="fade-up">Buy now</a>  
+              <a href="" className="btn outline d-lg-none" data-aos="fade-up">More features</a>  
             </div>
 
             <img src={logo2} className="img-fluid" alt="logo2" />
@@ -172,7 +173,8 @@ function App() {
 
         <section id="your-benefits">
           <div className="row">
-            <h1 data-aos="fade-down">Why you should buy kai Inu</h1>
+            <h1 data-aos="fade-down" className="d-none d-lg-block">Why you should buy kai Inu</h1>
+            <h1 data-aos="fade-down" className=" d-lg-none">Your benefits</h1>
             <div className="col-md-6" data-aos="fade-right">
               <iframe width="90%" height="90%" src="https://www.youtube.com/embed/FJYgse_La6M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
@@ -203,9 +205,14 @@ function App() {
                 <p>At the top of the secret mountain, where the line between land and sky blurs, the veneered Kai Inu was forged by ancient monks. Declared as a natural monument in 1934, it’s time to declare Kai Inu as a crypto meme monument.</p>
               </div>
             </div>
-            <div className="col-md-6" data-aos="fade-left">
-              <img src={mobileChart} className="img-fluid" alt="chart" />
-              <a href="" className="btn">Explore the Wallet Explorer now</a>  
+            <div className="col-md-6">
+              <div data-aos="fade-left">
+                <div className="mobile-chart">
+                  <img src={mobileChart} className="img-fluid" alt="chart" />
+                  <img src={kaiken} className="img-fluid kaiken" alt="chart" />
+                </div>
+              </div>
+              <a href="" className="btn center-btn" data-aos="fade-right">Explore the Wallet Explorer now</a>  
             </div>
           </div>
         </section>
@@ -226,6 +233,7 @@ function App() {
                 <h2>2% Marketing</h2>
                 <p>As more transactions come in, our liquidity will increase, allowing bigger trades and stabilizing our price.</p>
               </div>
+              <a href="" class="btn d-lg-none">Buy now</a>
             </div>
             <div className="col-md-6 d-flex order-1 order-md-2" data-aos="fade-left">
               <div className="mt-auto mb-auto">
@@ -256,7 +264,6 @@ function App() {
                       <li>Community Building</li>
                     </ul>
                   </li>
-
                   <li>
                     <ul className="list">
                       <h3>June 2021</h3>
@@ -268,7 +275,6 @@ function App() {
                       <li className="unchecked">Marketing Push</li>
                     </ul>
                   </li>
-
                   <li>
                     <ul className="list">
                       <h3>July 2021</h3>
@@ -277,19 +283,15 @@ function App() {
                       <li className="unchecked">Kai Inu merchandise</li>
                     </ul>
                   </li>
-
                   <li>
                     <ul className="list">
                       <h3>August 2021</h3>
                       <p>To Be Announced…</p>
                     </ul>
                   </li>
-
                 </ul>
-                
               </div>
-              
-
+              <a href="" class="btn d-lg-none">Buy now</a>
             </div>
             <div className="col-md-6 d-none d-lg-block">
               <div className="galaxy">
