@@ -1,4 +1,5 @@
 import logo from './images/logo.png';
+import logo2 from './images/logo2.png';
 import platforms from './images/platforms.png';
 import chart from './images/chart.png';
 import galaxy from './images/galaxy.svg';
@@ -67,6 +68,7 @@ function App() {
             <li>Available on BSC & ETH chain</li>
             <li>Weekly buybacks</li>
           </ul>
+          <img src={logo2} className="img-fluid" alt="logo2" />
         </div>
 
         <div className="platforms">
