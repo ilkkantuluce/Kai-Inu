@@ -58,22 +58,25 @@ function App() {
         </nav>
 
 
-        <div className="container info">
-          <h1>Kai Inu</h1>
-          <ul className="list">
-            <li>Listed on 5 exchanges</li>
-            <li>Unique Wallet Explorer Utility</li>
-            <li>2% rewards for holders</li>
-            <li>German, doxxed team</li>
-            <li>Available on BSC & ETH chain</li>
-            <li>Weekly buybacks</li>
-          </ul>
-          <img src={logo2} className="img-fluid" alt="logo2" />
-        </div>
+        <div className="container">
+          <div className="info">
+            <h1 data-aos="fade-down">Kai Inu</h1>
+            <ul className="list" data-aos="fade-right">
+              <li>Listed on 5 exchanges</li>
+              <li>Unique Wallet Explorer Utility</li>
+              <li>2% rewards for holders</li>
+              <li>German, doxxed team</li>
+              <li>Available on BSC & ETH chain</li>
+              <li>Weekly buybacks</li>
+            </ul>
+            <img src={logo2} className="img-fluid" alt="logo2" />
+          </div>
 
-        <div className="platforms">
-        <img src={platforms} className="img-fluid center" alt="platforms" />
+          <div className="platforms" data-aos="fade-up">
+            <img src={platforms} className="img-fluid center" alt="platforms" />
+          </div>
         </div>
+        
       </header>
 
 
@@ -81,10 +84,10 @@ function App() {
 
         <section id="wallet-explorer" className="wallet-explorer">
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-md-6" data-aos="fade-right">
               <img src={chart} className="img-fluid" alt="chart" />
             </div>
-            <div className="col-md-6 d-flex">
+            <div className="col-md-6 d-flex" data-aos="fade-left">
               <div className="mt-auto mb-auto">
                 <h1>Wallet Explorer</h1>
                 <p>At the top of the secret mountain, where the line between land and sky blurs, the veneered Kai Inu was forged by ancient monks. Declared as a natural monument in 1934, it’s time to declare Kai Inu as a crypto meme monument.</p>
@@ -98,13 +101,13 @@ function App() {
 
         <section id="infos-stats">
           <div className="row">
-            <div className="col-md-6 d-flex">
+            <div className="col-md-6 d-flex" data-aos="fade-right">
               <div className="mt-auto mb-auto">
                 <h1>Infos &amp; Stats</h1>
                 <p>At the top of the secret mountain, where the line between land and sky blurs, the veneered Kai Inu was forged by ancient monks. Declared as a natural monument in 1934, it’s time to declare Kai Inu as a crypto meme monument.</p>
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6" data-aos="fade-left">
               <div className="box">
                 <div>
                   <p>Published</p>
@@ -154,11 +157,11 @@ function App() {
 
         <section id="your-benefits">
           <div className="row">
-            <h1>Why you should buy kai Inu</h1>
-            <div className="col-md-6">
-              <iframe width="90%" height="100%" src="https://www.youtube.com/embed/FJYgse_La6M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h1 data-aos="fade-down">Why you should buy kai Inu</h1>
+            <div className="col-md-6" data-aos="fade-right">
+              <iframe width="90%" height="90%" src="https://www.youtube.com/embed/FJYgse_La6M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6" data-aos="fade-left">
               <ul className="list">
                 <li>Available on BSC & ETH</li>
                 <li>Unique Wallet Utility</li>
@@ -178,7 +181,7 @@ function App() {
 
         <section id="tokenomics">
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-md-6" data-aos="fade-right">
               <div className="box">
                 <h2>3% Liquidity</h2>
                 <p>As more transactions come in, our liquidity will increase, allowing bigger trades and stabilizing our price.</p>
@@ -192,7 +195,7 @@ function App() {
                 <p>As more transactions come in, our liquidity will increase, allowing bigger trades and stabilizing our price.</p>
               </div>
             </div>
-            <div className="col-md-6 d-flex">
+            <div className="col-md-6 d-flex" data-aos="fade-left">
               <div className="mt-auto mb-auto">
                 <h1>Tokenomics</h1>
                 <p>Kai Inu is a deflationary token running on the BSC network joining the ranks of the master pups.</p>
@@ -205,9 +208,9 @@ function App() {
 
         <section id="roadmap">
           <div className="row">
-            <div className="col-md-6">
-              <h1>Roadmap</h1>
-              <div className="relative">
+            <div className="col-6">
+              <h1 data-aos="fade-down">Roadmap</h1>
+              <div className="relative" data-aos="fade-right">
                 <div class="vl"></div>
                 <ul className="roadmap-list">
                   <li>
@@ -256,7 +259,7 @@ function App() {
               
 
             </div>
-            <div className="col-md-6">
+            <div className="col-6">
               <div className="galaxy">
                 <img src={galaxy} className="img-fluid" alt="galaxy" />
               </div>

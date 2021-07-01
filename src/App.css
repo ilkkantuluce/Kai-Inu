@@ -2,6 +2,13 @@ body {
   background-color: #121212;
   color: #D5D5D5;
   font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+}
+
+@media (min-width: 1200px){
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+      max-width: 1070px;
+  }
 }
 
 header {
@@ -18,15 +25,13 @@ header .info {
 
 header .info img {
   position: absolute;
-  right: 18.5%;
+  right: 16%;
   top: 0px;
 }
 
 header .platforms {
   margin-top: 16vh;
   text-align: center;
-  padding-left: 5%;
-  padding-right: 5%;
 }
 
 .navbar {
@@ -168,6 +173,24 @@ p {
 .wallet-explorer img{
   max-width: 90%;
   max-height: auto;
+}
+
+@media screen and (max-width: 1000px){
+  h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .wallet-explorer img{
+    max-width: 100%;
+    max-height: auto;
+  }
+
+  section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-top: 50px;
+  }
 }
 
 .box {
