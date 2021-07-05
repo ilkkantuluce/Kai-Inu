@@ -62,7 +62,10 @@ function App() {
 
         <div className="container">
           <div className="info">
-            <h1 data-aos="fade-down">Kai Inu</h1>
+            <div data-aos="fade-down">
+              <p className="d-lg-none">Welcome to the age of</p>
+              <h1>Kai Inu</h1>
+            </div>
             <ul className="list d-none d-lg-block" data-aos="fade-right">
               <li>Listed on 5 exchanges</li>
               <li>Unique Wallet Explorer Utility</li>

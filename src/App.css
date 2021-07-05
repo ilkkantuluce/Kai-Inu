@@ -273,12 +273,34 @@ p {
   margin-left: auto;
 }
 
+@media screen and (min-width: 1650px){
+  header {
+    height: fit-content;
+  }
+  header .platforms {
+    margin-top: 10vh;
+    padding-bottom: 30px;
+  }
+  section {
+    margin-top: 50px;
+  }
+}
+
 @media screen and (max-width: 1000px){
   body {
     color: #B2B1B1;
   }
   header .info {
-    margin-top: 2vh;
+    margin-top: 5vh;
+  }
+  header .info p {
+    color: white;
+    margin-bottom: 0px;
+    font-size: 20px;
+  }
+  header .info h1 {
+    font-size: 70px;
+    line-height: 80px;
   }
   header .platforms {
     margin-top: 6vh;
