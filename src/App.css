@@ -271,6 +271,7 @@ p {
 .box>div small {
   padding-left: 30px;
   margin-left: auto;
+  line-height: 30px;
 }
 
 @media screen and (min-width: 1650px){
@@ -299,8 +300,8 @@ p {
     font-size: 20px;
   }
   header .info h1 {
-    font-size: 70px;
-    line-height: 80px;
+    font-size: 100px;
+    line-height: 120px;
   }
   header .platforms {
     margin-top: 6vh;
@@ -384,5 +385,12 @@ p {
   }
   ul li .list {
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 360px){
+  header .info h1 {
+    font-size: 80px;
+    line-height: 90px;
   }
 }
