@@ -1,5 +1,4 @@
 import logo from './images/logo.png';
-import logo2 from './images/logo2.png';
 import platforms from './images/platforms.png';
 import mobilePlatforms from './images/mobile-platforms.png';
 import chart from './images/chart.png';
@@ -85,7 +84,6 @@ function App() {
               <a href="" className="btn outline d-lg-none" data-aos="fade-up">More features</a>  
             </div>
 
-            <img src={logo2} className="img-fluid" alt="logo2" />
           </div>
 
           <div className="platforms" data-aos="fade-up">

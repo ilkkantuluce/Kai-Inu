@@ -17,7 +17,7 @@ body {
 
 header {
   height: 100vh;
-  background-image: url("./images/background.png");
+  background-image: url("./images/new-background.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -268,6 +268,10 @@ p {
   color: #B2B1B1;
 }
 
+.box>div small {
+  padding-left: 30px;
+  margin-left: auto;
+}
 
 @media screen and (max-width: 1000px){
   body {
@@ -278,10 +282,14 @@ p {
   }
   header .platforms {
     margin-top: 6vh;
+    border-bottom: 1px #9d9d9d17 solid;
+    padding-bottom: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
   }
   header {
     background-image: none;
-    border-bottom: 1px #9d9d9d17 solid;
+    height: auto;
   }
   header .info img {
     display: none;
